@@ -1,0 +1,502 @@
+<html>
+
+	<head>
+
+	<title>BBC's Technology page clone</title>
+
+	<style type="text/css">
+
+	.topbar{
+		width:1000px;
+		margin: 0 auto;
+		height:40px;
+		margin-top:10px;
+	}
+
+
+	.topbarsection{
+		height:100%;
+		border-left:1px #CCCCCC solid;
+		float:left;
+		height:40px;
+		padding-right:10px;
+	}
+
+	#logo{
+		float:left;
+		margin-top:10px;
+		margin-right:10px;
+		margin-left: 50px;
+	}
+
+	body{
+		margin:0;
+		padding:0;
+		font-family:Helvetic, Arial, sans-serif;
+	}
+
+	.toplinks{
+		text-decoration:none;
+		color:black;
+		font-weight:bold;
+		position: relative;
+		top:11px;
+		left:10px;
+		float:left;
+		height:40px;
+		padding-right:10px;
+	}
+
+	.signin{
+		text-decoration:none;
+		color:black;
+		font-weight:bold;
+		position: relative;
+		top:11px;
+		left:10px;
+		padding-right:10px;
+	}
+
+	#searchbar{
+		height:20px;
+		padding-left:10px;
+		border-left:1px #CCCCCC solid;
+		float:left;
+
+	}
+
+	#Midbar{
+		background-color:#BB1919;
+		width:100%;
+		height:40px;
+		position:relative;
+		padding:none;
+		text-indent:48px;
+		color:white;
+	}
+
+	.lowbarsection{
+		font-family: 'News', Arial;
+		color:white;
+		position:relative;
+		float:left;
+		text-decoration:none;
+		padding-left:20px;
+	}
+
+
+	.lowbar{
+		width:100%;
+		height:20px;
+		background-color:#A91717;
+	}
+
+	.bordersep{
+		border-left:1px #CCCCCC solid;
+		height:15px;
+		position:relative;
+		top:1px;
+		bottom:1px;
+		float:left;
+		display:inline-block;
+		padding-left:10px;
+	}
+
+	#Home{
+		position:relative;
+		left:30px;
+		right:50px;
+		float:left;
+		padding-right:30px;
+	}
+
+	#techtab{
+		font-family:Helvetic, Arial, sans-serif;
+		position:relative;
+		left:48px;
+		height:20px;
+		float:bottom;
+		text-decoration:underline;
+		text-decoration-color:#BB1919;
+	}
+
+	#frontpage{
+		color:#231F20;
+		margin-left:48px;
+		margin-top:25px;
+	}
+
+	#ps{
+		float:right;
+		margin:10px;
+		margin-right:750px;
+	}
+
+	#fptext{
+		margin-left:48px;
+	}
+
+	#hddate{
+		font-size:10px;
+		float:left;
+		margin-left:48px;
+		margin-right:2px;
+	}
+
+	#tlink{
+		font-size: 10px;
+		border-left:1px #CCCCCC solid;
+		height:15px;
+		position:relative;
+		top:1px;
+		bottom:1px;
+		float:left;
+		display:inline-block;
+		padding-left:10px;
+		color:red;
+	}
+
+	#redsep {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid red;
+    margin: 2em 100px;
+    margin-left:48px;
+    padding: 0;
+	}
+
+	.onsize{
+		font-size:12px;
+		margin-left:50px;
+		margin-top:-16px;
+		margin-bottom:2px;
+	}
+
+	.onsize2{
+		font-size:12px;
+		margin-left:50px;
+	}
+
+	#greysep{
+		display: block;
+    	height: 1px;
+    	border: 0;
+    	border-top: 1px solid #CCCCCC;
+    	margin: 2em 750px;
+    	margin-left:48px;
+    	padding: 0;
+	}
+
+	#fbpic{
+		position:relative;
+		margin-left:48px;
+		margin-right:10px;
+		float:left;
+	}
+
+	.exh{
+		position:inline;
+		margin-left:5px;
+		margin-right:5px;
+		border-left:1px solid #CCCCCC;
+		padding-left:10px;
+	}
+
+	.tidbits{
+		position:relative;
+		border-left:1px solid #CCCCCC;
+		padding-left:10px;
+		font-size:12px;
+		border-bottom:1px solid #CCCCCC;
+
+	}
+
+	#newstable{
+		margin-right:720px;
+	}
+
+	#subhddate{
+		font-size:10px;
+		float:left;
+		margin-right:2px;
+	}
+
+	#techlink{
+		font-size: 10px;
+		height:15px;
+		position:relative;
+		top:1px;
+		bottom:1px;
+		float:left;
+		display:inline-block;
+		color:red;
+	}
+
+	.otherheadlines{
+		position:relative;
+		font-size:14px;
+		margin-left:48px;
+		float:left;
+		padding-right:10px;
+
+	}
+
+	.exhpic{
+		position:inline;
+		padding:0;
+		
+	}
+
+	#redsep2{
+		display: block;
+    	height: 1px;
+    	border: 0;
+    	border-top: 1px solid red;
+    	margin: 2em 175px;
+    	margin-left:48px;
+    	padding: 0;
+	}
+
+	#tlink2{
+		font-size: 12px;
+		border-left:1px #CCCCCC solid;
+		height:15px;
+		position:relative;
+		top:1px;
+		bottom:1px;
+		float:left;
+		display:inline-block;
+		padding-left:10px;
+		color:red;
+	}
+
+	#hddate2{
+		font-size:12px;
+		float:left;
+		margin-left:48px;
+		margin-right:2px;
+	}
+
+	#tortoise{
+		padding-bottom:0px;
+	}
+
+	#Spam{
+		padding-bottom:0px;
+	}
+
+	#remastered{
+		padding-top:0px;
+	}
+
+	#fbapology{
+		font-size:14px;
+	}
+
+	#hddate3{
+		font-size:12px;
+		float:left;
+		margin-right:2px;
+	}
+
+	#lasttidbit{
+		position:relative;
+		border-left:1px solid #CCCCCC;
+		padding-left:10px;
+		font-size:12px;
+	}
+
+
+	</style>
+
+
+
+
+	</head>
+
+	<body>
+
+	<div id="topbar">
+	<a href="http://www.bbc.com" id="logo"><img src="bbc_logo"></a>
+	
+	<div class="topbarsection">
+
+	 <a href="https://ssl.bbc.com/id/signin?ptrt=http%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology" class="signin">Sign In </a> 
+	</div>
+
+	<div class="topbarsection"><a href="http://www.bbc.com/news" class="toplinks">News</a></div>
+
+	<div class="topbarsection"><a href="http://www.bbc.com/sport" class="toplinks">Sport</a></div>	
+
+	<div class="topbarsection"><a href="http://shop.bbc.com/us/page/home" class="toplinks">Shop</a></div>
+
+	<div class="topbarsection"><a href="http://www.bbc.com/earth/world" class="toplinks">Earth</a></div>
+
+	<div class="topbarsection"><a href="http://www.bbc.com/travel/" class="toplinks">Travel</a></div>
+
+	<div class="topbarsection"><a href="" class="toplinks">More</a></div>
+
+	<div class="topbarsection"><input type="text" id="searchbar" class="toplinks" placeholder="Search"></div>
+
+
+	</div>
+	</div>
+
+	<br>
+	<div id="Midbar"><h1>NEWS</h1></div>
+
+	<div class="lowbar">
+	<div class="lowbarsection"><span id="Home">Home </span></div>
+
+	<div class="lowbarsection"><span class="bordersep">Videos</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">World</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">US & Canada</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">Business</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">Tech</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">Science</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">Magazine</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">Entertainment & Arts</span></div>
+
+	<div class="lowbarsection"><span class="bordersep">Health</span></div>
+
+    </div>
+
+   	<div id="techtab"<h2>Technology </h2></div>
+
+	<h2 id="frontpage">PLAYSTATION VR HAS STAR WARS AND SCARES</h2>
+
+	<img id="ps" src="ps.jpg">
+
+	<div id="fptext">Sony unveils a raft of new games that will be available in virtual reality on the Playstation VR headset.</div>
+
+	<div id="hddate">14 June 2016</div>
+	
+	<div id="tlink">Technology</div>
+
+	<hr id="redsep">
+
+	<div class="onsize">Sony readies the Playstation 4 Neo</div>
+
+	<div class="onsize2">Playstation VR Price Announcement</div>
+
+    <table id="newstable">
+
+    <tr>
+
+    <td id="fbpic"><img src="fb.jpg"></td>
+
+    <td class="exh"><img src="scoop2.jpg" id="exhpic"></td>
+
+    <td class="tidbits">
+
+     <h2>Russia 'hacked' Democrats data on Donald Trump</h2>
+
+   <div id="subhddate">8 hours ago</div> 
+	
+	<div id="techlink">Technology</div> </td>
+
+    </tr>
+
+    <tr>
+
+    <td class="otherheadlines">
+
+
+	<div id="Spam"><h3>'Spam King' sentenced to two years</h3>
+
+	<p>A US man who sent more than 27 million emails to Facebook users is sentenced to two and a half years in prison</p>
+
+</div>
+
+    </td>
+
+    <td class="exh">
+
+    <div id="tortoise">
+
+	<h3>E3: Will the tortoise or hare win?</h3>
+
+	<P>Every E3, the video game Expo held in Los Angeles, people like to declare a winner. Who will it be this year?</P>
+
+	</div>
+
+	<div id="hddate">14 June 2016</div>
+	
+	<div id="tlink">Technology</div>
+
+
+
+
+    </td>
+
+    <td class="tidbits">
+
+    <h2>UK to get 24-hour gaming channel on TV</h2>
+
+    <div id="subhddate">5 hours ago</div> 
+	
+	<div id="techlink">Technology</div> 
+
+
+    </td>
+
+    </tr>
+
+    <tr>
+
+    <td>
+
+    <div id="hddate">14 June 2016</div>
+	
+	<div id="tlink">Technology</div>
+
+	<hr id="redsep2">
+
+	<div id="remastered">
+    <p class="otherheadlines">E3:Will the tortoise or hare win?</p>
+
+	<p class="otherheadlines">Why are so many games being remastered?</p>
+</div>
+    </td>
+
+
+    <td class="tidbits">
+
+    <div id="fbapology">
+	<p>Facebook apology after Lahore attack</p>
+
+	<P>Silicon Valley faces backlash over attacks</P>
+</div>
+
+
+    </td>
+
+    <td id="lasttidbit">
+
+    <h2>Hacker who aided IS to face jail term</h2>
+
+    <div id="hddate3">14 June 2016</div>
+	
+	<div id="tlink2">Technology</div>
+
+    </td>
+
+
+	</tr>
+
+
+    </table>
+
+
+
+	</body>
+
+</html>
